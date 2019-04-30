@@ -1,0 +1,7 @@
+<h1>Salesforce login</h1>
+<%= form_for :user, url: users_path  do |f| %>
+  Username: <%= f.text_field :username %><br />
+  Password : <%= f.text_field :password %><br />
+  Token : <%= f.text_field :token %><br />
+  <%= f.submit %>
+<% end %>
